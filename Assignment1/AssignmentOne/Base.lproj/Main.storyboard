@@ -87,15 +87,31 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-i9-ukg">
+                                                <rect key="frame" x="139" y="53" width="55" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frames/second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxA-8R-qHS">
+                                                <rect key="frame" x="139" y="91" width="94" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.64987463850000005" green="0.85614093420000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="xzH-ar-SaR" firstAttribute="top" secondItem="dP1-zM-aeN" secondAttribute="bottom" constant="8" id="9eO-hd-NvU"/>
+                                            <constraint firstItem="nxA-8R-qHS" firstAttribute="leading" secondItem="xzH-ar-SaR" secondAttribute="trailing" constant="17" id="HwJ-lE-8uT"/>
                                             <constraint firstItem="xzH-ar-SaR" firstAttribute="leading" secondItem="SzX-HP-h5q" secondAttribute="leading" constant="8" id="JLq-iw-1ut"/>
+                                            <constraint firstItem="xDF-i9-ukg" firstAttribute="top" secondItem="SzX-HP-h5q" secondAttribute="top" constant="53" id="NAW-Vm-aO1"/>
                                             <constraint firstItem="Wff-ZV-cEq" firstAttribute="top" secondItem="xzH-ar-SaR" secondAttribute="bottom" constant="8" id="bDg-OS-Cs1"/>
                                             <constraint firstItem="dP1-zM-aeN" firstAttribute="top" secondItem="1WR-xi-kGN" secondAttribute="bottom" constant="8" id="gbh-2J-9CG"/>
                                             <constraint firstItem="1WR-xi-kGN" firstAttribute="leading" secondItem="SzX-HP-h5q" secondAttribute="leading" constant="8" id="kKU-zp-Dp8"/>
+                                            <constraint firstItem="xDF-i9-ukg" firstAttribute="leading" secondItem="dP1-zM-aeN" secondAttribute="trailing" constant="17" id="mBh-m9-Vut"/>
                                             <constraint firstItem="1WR-xi-kGN" firstAttribute="top" secondItem="SzX-HP-h5q" secondAttribute="top" constant="8" id="pBy-4B-0fi"/>
+                                            <constraint firstItem="nxA-8R-qHS" firstAttribute="top" secondItem="xDF-i9-ukg" secondAttribute="bottom" constant="22" id="x9N-R2-RFC"/>
                                             <constraint firstItem="Wff-ZV-cEq" firstAttribute="leading" secondItem="SzX-HP-h5q" secondAttribute="leading" constant="8" id="xSc-Xt-bYE"/>
                                             <constraint firstItem="dP1-zM-aeN" firstAttribute="leading" secondItem="SzX-HP-h5q" secondAttribute="leading" constant="8" id="yuU-9h-A0i"/>
                                         </constraints>
