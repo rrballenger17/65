@@ -12,7 +12,7 @@ class Problem2ViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    
+    // print int 2d array by row
     func printBoardInt(board: Array<Array<Int>>){
         for y in 0...9{
             
@@ -26,6 +26,7 @@ class Problem2ViewController: UIViewController {
         }
     }
     
+    // print bool 2d array by row
     func printBoardBool(board: Array<Array<Bool>>){
         for y in 0...9{
             
@@ -58,7 +59,7 @@ class Problem2ViewController: UIViewController {
         
     }
     
-    
+    // create a 2d array of random bool's
     func createRandomArray()->Array<Array<Bool>>{
         var board = Array<Array<Bool>>()
         
@@ -67,7 +68,7 @@ class Problem2ViewController: UIViewController {
             var inside = Array<Bool>()
             
             for _ in 0...9{
-                
+                                
                 if arc4random_uniform(3) == 1 {
                     inside.append(true)
                 } else {
@@ -81,7 +82,7 @@ class Problem2ViewController: UIViewController {
         return board
     }
 
-    
+    /*
     func printRow(board: Array<Array<Bool>>){
         
         var str = ""
@@ -91,7 +92,7 @@ class Problem2ViewController: UIViewController {
         }
         
         print(str)
-    }
+    }*/
     
     
     @IBAction func run(sender: AnyObject) {
@@ -115,14 +116,17 @@ class Problem2ViewController: UIViewController {
                 let current = board[x][y]
                 
                 switch (current, neighs) {
-                    
+                
+                // alive and 2 or 3 true neighbors
                 case (true, 2..<4):
                                         
                     secondArray[x][y] = true
-                    
+                
+                // not alive and exactly 3 true neighbors
                 case (false, 3):
                     secondArray[x][y] = true
                     
+                // all other cases don't result in alive
                 default:
                     secondArray[x][y] = false
                 }
@@ -164,6 +168,7 @@ class Problem2ViewController: UIViewController {
         return coord
     }
     
+    // count true neighbors to the left
     func leftNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -182,6 +187,7 @@ class Problem2ViewController: UIViewController {
         return sum
     }
     
+    // count true neighbors to the right
     func rightNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -200,6 +206,7 @@ class Problem2ViewController: UIViewController {
         return sum
     }
     
+    // count true neighbors above and below
     func verticalNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
     
         var below = y - 1
@@ -241,7 +248,7 @@ class Problem2ViewController: UIViewController {
     
     
     
-    
+    // count true neighbors including ones to the left, right, and vertical aligned
     func countNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -283,7 +290,7 @@ class Problem2ViewController: UIViewController {
         
     }*/
     
-    
+    // make an array containing the number of true neighbors for each spot
     func countNeighborsAll(board: Array<Array<Bool>>)-> Array<Array<Int>>{
         var neighbors = makeIntArray(board)
         
@@ -299,11 +306,12 @@ class Problem2ViewController: UIViewController {
         return neighbors
     }
     
+    // make a 2d array (10x10) of Int's, all with value -1
     func makeIntArray(board: Array<Array<Bool>>)->Array<Array<Int>>{
         
         var holder = Array<Array<Int>>()
         
-        for _ in 0...board.count - 1{
+        for _ in 0...9{
             
             var newInt = Array<Int>()
             
