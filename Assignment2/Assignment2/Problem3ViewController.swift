@@ -12,7 +12,7 @@ class Problem3ViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    
+    // print 2d array of ints by row
     func printBoardInt(board: Array<Array<Int>>){
         for y in 0...9{
             
@@ -26,6 +26,7 @@ class Problem3ViewController: UIViewController {
         }
     }
     
+    // print 2d array of bool's by row
     func printBoardBool(board: Array<Array<Bool>>){
         for y in 0...9{
             
@@ -38,7 +39,7 @@ class Problem3ViewController: UIViewController {
         }
     }
     
-    
+    // count true's in a 2d bool array
     func countLive(board: Array<Array<Bool>>)->Int{
         
         var sum = 0
@@ -58,7 +59,7 @@ class Problem3ViewController: UIViewController {
         
     }
     
-    
+    // create a random 10x10 array of bool's
     func createRandomArray()->Array<Array<Bool>>{
         var board = Array<Array<Bool>>()
         
@@ -93,7 +94,7 @@ class Problem3ViewController: UIViewController {
         print(str)
     }
     
-    
+    // button action - create a board, print states, and make a step forward
     @IBAction func run(sender: AnyObject) {
         
         let engine = Engine()

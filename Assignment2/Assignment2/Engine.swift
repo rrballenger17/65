@@ -26,6 +26,7 @@ class Engine{
         return coord
     }
     
+    // count all true's to the left
     func leftNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -44,6 +45,7 @@ class Engine{
         return sum
     }
     
+    // count all true's to the right
     func rightNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -62,6 +64,7 @@ class Engine{
         return sum
     }
     
+    // count all true's above and below the spot
     func verticalNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var below = y - 1
@@ -103,7 +106,7 @@ class Engine{
     
     
     
-    
+    // count neighbors containing true in all directions with wrapping
     func countNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> Int{
         
         var sum = 0
@@ -127,13 +130,16 @@ class Engine{
                 let current = board[x][y]
                 
                 switch (current, neighs) {
-                    
+                
+                // alive and 2 or 3 neighbors lives
                 case (true, 2..<4):
                     secondArray[x][y] = true
-                    
+                
+                // dead and exactly 3 neighbors lives
                 case (false, 3):
                     secondArray[x][y] = true
-                    
+                
+                // all else is set to false
                 default:
                     secondArray[x][y] = false
                 }

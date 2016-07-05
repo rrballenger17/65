@@ -27,6 +27,8 @@ class Engine1{
         return coord
     }
     
+    
+    
     func leftNeighbors(board: Array<Array<Bool>>, x: Int, y: Int)-> [(Int, Int)]{
         
         var all = [(Int, Int)]()
@@ -130,7 +132,7 @@ class Engine1{
                 for t in tuples{
                     neighs = neighs + Int(board[t.0][t.1])
                 }
-                
+                                
                 let current = board[x][y]
                 
                 switch (current, neighs) {
