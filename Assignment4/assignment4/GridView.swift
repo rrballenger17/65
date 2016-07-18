@@ -31,7 +31,7 @@ import UIKit
             
             let larger = cols > rows ? cols : rows
             
-            dim = 250/larger
+            dim = 200/larger
         }
     }
     

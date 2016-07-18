@@ -27,75 +27,75 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-Bf-S2P">
-                                        <rect key="frame" x="110" y="75" width="56" height="30"/>
+                                        <rect key="frame" x="110" y="26" width="56" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="PRl-Yr-uOp">
-                                        <rect key="frame" x="192" y="76" width="94" height="29"/>
+                                        <rect key="frame" x="192" y="27" width="94" height="29"/>
                                         <connections>
                                             <action selector="rowsChange:" destination="9pv-A4-QxB" eventType="valueChanged" id="fRd-ca-5jy"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2o-rX-sSs">
-                                        <rect key="frame" x="8" y="76" width="70" height="27"/>
+                                        <rect key="frame" x="8" y="27" width="70" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Columns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2A-XK-mWo">
-                                        <rect key="frame" x="8" y="143" width="70" height="27"/>
+                                        <rect key="frame" x="8" y="62" width="70" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PU-L1-LLs">
-                                        <rect key="frame" x="110" y="140" width="56" height="30"/>
+                                        <rect key="frame" x="110" y="61" width="56" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hVO-m4-LeC">
-                                        <rect key="frame" x="192" y="140" width="94" height="29"/>
+                                        <rect key="frame" x="192" y="61" width="94" height="29"/>
                                         <connections>
                                             <action selector="colsChange:" destination="9pv-A4-QxB" eventType="valueChanged" id="bJB-v9-MmF"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refresh Rate (Hz)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHo-2O-l6J">
-                                        <rect key="frame" x="8" y="212" width="107" height="27"/>
+                                        <rect key="frame" x="8" y="99" width="107" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8M-AB-vMD">
-                                        <rect key="frame" x="110" y="211" width="56" height="30"/>
+                                        <rect key="frame" x="110" y="98" width="56" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timed Refresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3G-ZQ-cck">
-                                        <rect key="frame" x="8" y="276" width="89" height="21"/>
+                                        <rect key="frame" x="8" y="139" width="89" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.10000000000000001" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="BzV-XC-am0">
-                                        <rect key="frame" x="190" y="211" width="118" height="31"/>
+                                        <rect key="frame" x="190" y="98" width="118" height="31"/>
                                         <connections>
                                             <action selector="refreshChange:" destination="9pv-A4-QxB" eventType="valueChanged" id="1hc-rt-VWB"/>
                                         </connections>
                                     </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-6k-bLG">
+                                        <rect key="frame" x="110" y="134" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="refreshSwitchClick:" destination="9pv-A4-QxB" eventType="valueChanged" id="RXF-fQ-wvf"/>
+                                        </connections>
+                                    </switch>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r20-fU-6Wa">
-                                        <rect key="frame" x="8" y="332" width="96" height="30"/>
+                                        <rect key="frame" x="8" y="182" width="96" height="30"/>
                                         <state key="normal" title="About/Credits"/>
                                         <connections>
                                             <segue destination="tP7-ex-qiF" kind="show" id="Gf6-Uu-PGO"/>
                                         </connections>
                                     </button>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-6k-bLG">
-                                        <rect key="frame" x="110" y="271" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="refreshSwitchClick:" destination="9pv-A4-QxB" eventType="valueChanged" id="RXF-fQ-wvf"/>
-                                        </connections>
-                                    </switch>
                                 </subviews>
                             </view>
                         </subviews>
@@ -294,11 +294,11 @@ Statistics Icon: By Lucy G, http://www.flaticon.com/authors/lucy-g, from http://
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veQ-Pn-NCD" customClass="GridView" customModule="assignment4" customModuleProvider="target">
-                                <rect key="frame" x="5" y="25" width="570" height="450"/>
+                                <rect key="frame" x="5" y="25" width="570" height="398"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBK-cM-dPH">
-                                <rect key="frame" x="5" y="516" width="32" height="30"/>
+                                <rect key="frame" x="563" y="516" width="32" height="30"/>
                                 <state key="normal" title="Step"/>
                                 <connections>
                                     <action selector="buttonPush:" destination="bH9-RG-Otk" eventType="touchUpInside" id="P5Q-X8-vPI"/>
@@ -309,10 +309,10 @@ Statistics Icon: By Lucy G, http://www.flaticon.com/authors/lucy-g, from http://
                         <constraints>
                             <constraint firstItem="veQ-Pn-NCD" firstAttribute="leading" secondItem="Dvl-e8-2H5" secondAttribute="leading" constant="5" id="1kv-3D-eef"/>
                             <constraint firstAttribute="trailing" secondItem="ypw-NA-Gqc" secondAttribute="trailing" id="2Yq-bo-42Z"/>
+                            <constraint firstItem="veQ-Pn-NCD" firstAttribute="height" secondItem="ypw-NA-Gqc" secondAttribute="height" multiplier="0.75" id="36I-wt-6MD"/>
                             <constraint firstItem="jbk-sC-dfO" firstAttribute="top" secondItem="ypw-NA-Gqc" secondAttribute="bottom" id="AkH-EC-QsJ"/>
-                            <constraint firstItem="hBK-cM-dPH" firstAttribute="leading" secondItem="Dvl-e8-2H5" secondAttribute="leading" constant="5" id="Jl9-l7-4Km"/>
-                            <constraint firstItem="veQ-Pn-NCD" firstAttribute="height" secondItem="Dvl-e8-2H5" secondAttribute="height" multiplier="0.75" id="Kry-Pq-SQP"/>
                             <constraint firstItem="ypw-NA-Gqc" firstAttribute="leading" secondItem="Dvl-e8-2H5" secondAttribute="leading" id="P5w-4f-v5g"/>
+                            <constraint firstAttribute="trailing" secondItem="hBK-cM-dPH" secondAttribute="trailing" constant="5" id="Zv1-A0-q8V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="veQ-Pn-NCD" secondAttribute="trailing" constant="5" id="i43-bZ-EBE"/>
                             <constraint firstItem="veQ-Pn-NCD" firstAttribute="top" secondItem="Zk7-T5-fhH" secondAttribute="bottom" constant="5" id="rbo-db-5SS"/>
                             <constraint firstItem="ypw-NA-Gqc" firstAttribute="top" secondItem="Zk7-T5-fhH" secondAttribute="bottom" id="uXb-jM-IsN"/>
