@@ -132,11 +132,11 @@ class StandardEngine: EngineProtocol {
     }
     
 
-    private static var _sharedInstance = StandardEngine(cols: 10, rows: 10)
+    private static var oneInstance = StandardEngine(cols: 10, rows: 10)
     
     static var sharedInstance: StandardEngine {
         get {
-            return _sharedInstance
+            return oneInstance
         }
     }
     

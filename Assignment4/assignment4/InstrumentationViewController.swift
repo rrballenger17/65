@@ -83,7 +83,7 @@ class InstrumentationViewController: UIViewController {
             StandardEngine.sharedInstance.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(refresh,
                 target: self,
                 selector: sel,
-                userInfo: ["name": "fred"],
+                userInfo: ["name": "dory"],
                 repeats: true)
         }
     
