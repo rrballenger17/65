@@ -121,18 +121,9 @@ class StandardEngine: EngineProtocol {
         
     }
     
-    
-    private func gridChanged(){
-        delegate.engineDidUpdate(self.myGrid)
-        
-        let center = NSNotificationCenter.defaultCenter()
-        let note = NSNotification(name: "newGrid", object: self.myGrid as! Grid)
-        center.postNotification(note)
-    }
-    
     private var myGrid: GridProtocol{
         didSet{
-            gridChanged()
+            delegate.engineDidUpdate(self.myGrid)
         }
     }
     

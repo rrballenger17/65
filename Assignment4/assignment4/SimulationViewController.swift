@@ -42,9 +42,11 @@ class SimulationViewController: UIViewController, EngineDelegate {
     func engineDidUpdate(withGrid: GridProtocol){
         
         gridView.grid = StandardEngine.sharedInstance.grid
-        
-        
         gridView.setNeedsDisplay()
+        
+        let center = NSNotificationCenter.defaultCenter()
+        let note = NSNotification(name: "newGrid", object: withGrid as! Grid)
+        center.postNotification(note)
                 
     }
         
