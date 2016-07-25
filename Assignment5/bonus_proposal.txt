@@ -1,1 +1,9 @@
-asdfasdf
+
+Class Project Bonus Proposal
+
+I’m going to persist board states that have been saved. This will enable the user to return to a board even after the app is exited. A user may discover a reoccurring pattern like the glider and this feature will allow them to save it for later. Without persistence a user must write patterns down, take pictures, or find other ways outside of the app to record board states. I’ve done an online tutorial on persistence and should be able to complete this addition. 
+
+
+I’m also going to add random mutations, as suggested in assignment #5, that the user can turn on or off. New users may be unable to find patterns that last more than a few iterations and random mutations will help them create cell growth. Experienced users may also find this feature useful as a way to add variability. There will be an on and off button and a slider to select the rate of the mutations.
+
+Since persistence is complex and the mutations also include a rate setting, I’m assuming these tasks reach the 25 bonus points limit. If not, please let know and I can also do UI extensions, etc.
