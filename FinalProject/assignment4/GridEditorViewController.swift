@@ -33,7 +33,7 @@ class GridEditorViewController: UIViewController {
         
         Persist().storeData()
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(false, completion: nil)
         
     }
     
